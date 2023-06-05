@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thankyou for taking this survey</p>
+    <form id="survey-form">
+    <fieldset>
+     <label id="name-label">Nama: <input id="name" type="text" placeholder="Nama lengkap" required/></label>
+     <label id="email-label">Email: <input id="email" required type="email" placeholder="email" /></label>
+     <label id="number-label">Umur: <input id="number" type="number" placeholder="umur" min="14" max="130"></label>
+     <label>Apa aktifitas kamu saat ini?</label>
+<select id="dropdown"><
+  <option value="">(pilih salah satu)</option>
+  <option value="1">Tidak bekerja</option>
+  <option value="2">Bekerja penuh waktu</option>
+  <option value="3">Bekerja paruh waktu</option>
+  <option value="4">Freelance</option>
+  <option value="5">Mahasiswa/pelajar</option></select>
+</fieldset>
+<fieldset>
+  <legend>REKOMENDASI</legend>
+  <p>Apakah kamu akan merekomendasikan produk ini?</p>
+  <label for="iya tentu"><input id="option1" type="radio" name="group1" value="1" class="inline">Iya, tentu</label></br>
+   <label for="ragu"><input id="option2" type="radio" name="group1" value="2" class="inline">Hmm saya akan berpikir dahulu</label></br>
+   <label for="menolak"><input id="option3" type="radio" name="group1" value="3" class="inline">Tidak, saya tidak ingin</label></br>
+</fieldset>
+<fieldset>
+  <legend>KEPUASAN</legend>
+<p> Seberapa puas kamu dengan produk ini? </p>
+<label for="sangat puas"><input id="option1" type="radio" name="group2" value="1" class="inline">Saya sangat puas</label></br>
+<label for="netral"><input id="option2" type="radio" name="group2" value="2" class="inline">Netral</label></br>
+<label for="kurang puas"><input id="option3" type="radio" name="group2" value="3" class="inline">Kurang puas</label>
+<label for="tidak puas"><input id="option4" type="radio" name="group2" value="4" class="inline">Tidak puas</label></br>
+</fieldset></br>
+
+<fieldset>
+  <p>Apa yang kamu inginkan dari kami ke depannya?</p>
+     <label for="insole">
+          <input
+            id="insole"
+            type="checkbox"
+            required
+            name="insole"
+            value="1"
+          />Insole lebih diperbaiki lagi</label>
+           <label for="tapak">
+          <input
+            id="tapak"
+            type="checkbox"
+            required
+            name="tapak"
+            value="2"
+          />Tapaknya diperhalus lagi ke depannya </label>
+          <label for="bahan sepatu">
+          <input
+            id="bahan sepatu"
+            type="checkbox"
+            required
+            name="bahan sepatu"
+            value="3"
+          />Bahan sepatu tidak kaku lagi </label>
+  <label for="berat">
+          <input
+            id="berat"
+            type="checkbox"
+            required
+            name="berat"
+            value="4"
+          />Sepatu dibuat lebih ringan lagi </label>
+  </fieldset>
+  <fieldset>
+    <p>Apakah kamu punya saran tertentu?</p>
+    <textarea id="saran" name="saran" row="5" col="40" placeholder="masukkan saran disini..."></textarea>
+    </fieldset>
+    <input id="submit" type="submit" value="Submit">
+    </body>
+    </html>
+ 
+
+
